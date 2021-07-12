@@ -1,0 +1,32 @@
+{
+  "title": "FortressDB API",
+  "description": "This is such a great API!",
+  "gitbook": "3.x.x",
+  "structure": {
+    "readme": "FortressDB.md",
+    "glossary": "GLOSSARY.md"
+  },
+  "variables": {
+    "apiUrl": "https://backend.spacemonopoly3d.com/"
+  },
+  "plugins": [
+    "theme-api",
+    "collapsible-menu",
+    "hide-published-with",
+    "include-codeblock",
+    "ace",
+    "term",
+    "copy-code-button"
+  ],
+  "pluginsConfig": {
+    "theme-api": {
+      "theme": "dark",
+      "split": true
+    },
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": true,
+      "theme": "monokai"
+    }
+  }
+}
