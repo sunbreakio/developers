@@ -1,6 +1,6 @@
 # Summary
 
-* [API](endpoints/index.md)
+* [Personalizatio API](endpoints/index.md)
     * [Auth](endpoints/auth.md)
         * [Subscribe](endpoints/auth.md#subscribe)
     * [Database](endpoints/database.md)
@@ -26,7 +26,7 @@
         * [Get](endpoints/enum-values.md#get)
         * [Update](endpoints/enum-values.md#update)
         * [Delete](endpoints/enum-values.md#delete)
-* [API Test Tool](api-tool/index.md)
+* [API Test Client](api-tool/index.md)
 * [Querying](querying/index.md)
     * [Types](querying/types.md)
     * [Attributes](querying/attributes.md)
