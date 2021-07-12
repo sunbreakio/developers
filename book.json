@@ -3,7 +3,7 @@
   "description": "Sunbreak Personalization API",
   "gitbook": "3.x.x",
   "structure": {
-    "readme": "Sunbreak.md",
+    "readme": "README.md",
     "glossary": "GLOSSARY.md"
   },
   "variables": {
