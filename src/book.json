@@ -1,13 +1,13 @@
 {
-  "title": "FortressDB API",
-  "description": "This is such a great API!",
+  "title": "Sunbreak Personalization API",
+  "description": "Sunbreak Personalization API",
   "gitbook": "3.x.x",
   "structure": {
-    "readme": "FortressDB.md",
+    "readme": "Sunbreak.md",
     "glossary": "GLOSSARY.md"
   },
   "variables": {
-    "apiUrl": "https://backend.spacemonopoly3d.com/"
+    "apiUrl": "https://api.sunbreak.dev/"
   },
   "plugins": [
     "theme-api",
