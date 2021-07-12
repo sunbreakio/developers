@@ -1,0 +1,7 @@
+_book
+book.pdf
+book.mobi
+book.epub
+node_modules
+.idea
+.DS_Store
