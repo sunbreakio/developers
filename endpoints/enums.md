@@ -10,7 +10,7 @@ Enum - container for list of any values which can be used to display in DropDown
 **Method**
 
     POST
-    
+
 **URI**
 
     /api/enums
@@ -19,7 +19,7 @@ Enum - container for list of any values which can be used to display in DropDown
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -62,7 +62,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
+fetch("https://api.sunbreak.dev/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -73,7 +73,7 @@ fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'https://backend.spacemonopoly3d.com/api/enums',
+  'url': 'https://api.sunbreak.dev/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ var options = {
   body: JSON.stringify({"data":[{"name":"Enum 1"}],"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -92,7 +92,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://backend.spacemonopoly3d.com/api/enums');
+$request->setUrl('https://api.sunbreak.dev/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -130,7 +130,7 @@ See [Where](../querying/where.md) for more details.
 **Method**
 
     GET
-    
+
 **URI**
 
     /api/enums
@@ -139,7 +139,7 @@ See [Where](../querying/where.md) for more details.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -186,7 +186,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
+fetch("https://api.sunbreak.dev/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -197,7 +197,7 @@ fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://backend.spacemonopoly3d.com/api/enums',
+  'url': 'https://api.sunbreak.dev/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -205,7 +205,7 @@ var options = {
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["name","Enum 1"]}},"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -216,7 +216,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://backend.spacemonopoly3d.com/api/enums');
+$request->setUrl('https://api.sunbreak.dev/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_GET);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -250,7 +250,7 @@ catch(HTTP_Request2_Exception $e) {
 **Method**
 
     PUT
-    
+
 **URI**
 
     /api/enums
@@ -259,7 +259,7 @@ catch(HTTP_Request2_Exception $e) {
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -303,7 +303,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
+fetch("https://api.sunbreak.dev/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -314,7 +314,7 @@ fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'PUT',
-  'url': 'https://backend.spacemonopoly3d.com/api/enums',
+  'url': 'https://api.sunbreak.dev/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -322,7 +322,7 @@ var options = {
   body: JSON.stringify({"data":[{"id":49,"name":"Enum 2"}],"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -333,7 +333,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://backend.spacemonopoly3d.com/api/enums');
+$request->setUrl('https://api.sunbreak.dev/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_PUT);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -371,7 +371,7 @@ See [Where](../querying/where.md) for more details.
 **Method**
 
     DELETE
-    
+
 **URI**
 
     /api/enums
@@ -380,7 +380,7 @@ See [Where](../querying/where.md) for more details.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -424,7 +424,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
+fetch("https://api.sunbreak.dev/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -435,7 +435,7 @@ fetch("https://backend.spacemonopoly3d.com/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'DELETE',
-  'url': 'https://backend.spacemonopoly3d.com/api/enums',
+  'url': 'https://api.sunbreak.dev/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -443,7 +443,7 @@ var options = {
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["id",49]}},"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -454,7 +454,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://backend.spacemonopoly3d.com/api/enums');
+$request->setUrl('https://api.sunbreak.dev/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_DELETE);
 $request->setConfig(array(
   'follow_redirects' => TRUE
