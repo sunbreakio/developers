@@ -1,4 +1,2 @@
 # developers
 Developer Documentation
-
-Testing
