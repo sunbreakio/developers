@@ -1,6 +1,6 @@
 # Summary
 
-* [Personalizatio API](endpoints/index.md)
+* [Personalization API](endpoints/index.md)
     * [Auth](endpoints/auth.md)
         * [Subscribe](endpoints/auth.md#subscribe)
     * [Database](endpoints/database.md)
