@@ -20,7 +20,7 @@ const query = {
 }
 ```
 
-See Type [FDB Payload](types.md#fdb-payload) for more details.
+See Type [DB Payload](types.md#db-payload) for more details.
 
 Go to next [chapter](types.md) to get some more details
 

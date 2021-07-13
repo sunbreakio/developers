@@ -88,7 +88,7 @@ const query = {
 }
 ```
 
-...or pass [FDB Column](types.md#fdb-column) type
+...or pass [DB Column](types.md#db-column) type
 
 ```javascript
 const query = {
@@ -109,9 +109,9 @@ const query = {
 ```
 
 Simple rule: to make ordering by just one field use simple types like column name, number of column 
-or [FDB Column](types.md#fdb-column), to order by several fields - use an array of that values.
+or [DB Column](types.md#db-column), to order by several fields - use an array of that values.
 
-For more details see [FDB Order By Clause](types.md#fdb-order-by-clause) type description.
+For more details see [DB Order By Clause](types.md#db-order-by-clause) type description.
 
 Go to next [chapter](group.md) to understand how to use `group` parameter.
 

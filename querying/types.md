@@ -1,15 +1,15 @@
 # Types
 
-#### FDB Payload
+#### DB Payload
 ```javascript
-declare type FDBPayload = { 
+declare type DBPayload = { 
   filter?: {
-    attributes?: FDBAttribute,
-    where?: FDBWhere,
+    attributes?: DBAttribute,
+    where?: DBWhere,
     limit?: Number,
     offset?: Number,
-    order?: FDBOrderBy,
-    group?: FDBGrouopBy,
+    order?: DBOrderBy,
+    group?: DBGrouopBy,
   }, 
   context?: Object 
 }
@@ -17,102 +17,102 @@ declare type FDBPayload = {
 
 ---
 
-#### FDB Attribute
+#### DB Attribute
 ```javascript
-declare type FDBAttribute = FDBColumn | FDBFunction | FDBValue | FDBSubQuery | string
+declare type DBAttribute = DBColumn | DBFunction | DBValue | DBSubQuery | string
 ```
 
 ---
 
-#### FDB Function
+#### DB Function
 ```javascript
-declare type FDBFunction = { 
+declare type DBFunction = { 
     func: string, 
     args: any[], 
     alias?: string 
 }
 ```
 
-#### FDB Column
+#### DB Column
 ```javascript
-declare type FDBColumn = { 
-  column: string | FDBFunction, 
+declare type DBColumn = { 
+  column: string | DBFunction, 
   alias?: string 
 } | string
 ```
 
-#### FDB Value
+#### DB Value
 ```javascript
-declare type FDBValue = { 
+declare type DBValue = { 
   value: string | number, 
   alias?: string 
 }
 ```
 
-#### FDB SubQuery
+#### DB SubQuery
 ```javascript
-declare type FDBSubQuery = { 
-  select: FDBPayload 
+declare type DBSubQuery = { 
+  select: DBPayload 
 }
 ```
 
-#### FDB Operator
+#### DB Operator
 ```javascript
-declare type FDBOperator = string
+declare type DBOperator = string
 ```
 
 ---
 
-#### FDB Where Clause
+#### DB Where Clause
 ```javascript
-declare type FDBWhere = { 
+declare type DBWhere = { 
   operator: string, 
-  args: Array<FDBWhere | FDBWhereArgs> 
+  args: Array<DBWhere | DBWhereArgs> 
 }
 ```
 
-#### FDB Where Arguments
+#### DB Where Arguments
 ```javascript
-declare type FDBWhereArgs = Array<FDBWhereAttribute, FDBWhereLogic>
+declare type DBWhereArgs = Array<DBWhereAttribute, DBWhereLogic>
 ```
 
-#### FDB Where Attribute
+#### DB Where Attribute
 ```javascript
-declare type FDBWhereAttribute = FDBColumn | FDBFunction
+declare type DBWhereAttribute = DBColumn | DBFunction
 ```
 
-#### FDB Where logic
+#### DB Where logic
 ```javascript
-declare type FDBWhereLogic = FDBColumn | FDBFunction | Number | string
+declare type DBWhereLogic = DBColumn | DBFunction | Number | string
 ```
 
 ---
 
-#### FDB Order By Clause
+#### DB Order By Clause
 ```javascript
-declare type FDBOrderBy = FDBColumn | Number | { 
-  column: FDBColumn | Number, 
-  direction?: FDBOrderDirection 
+declare type DBOrderBy = DBColumn | Number | { 
+  column: DBColumn | Number, 
+  direction?: DBOrderDirection 
 }
 ```
 
-#### FDB Order Direction
+#### DB Order Direction
 ```javascript
-declare type FDBOrderDirection = 'ASC' | 'DESC'
+declare type DBOrderDirection = 'ASC' | 'DESC'
 ```
 
 ---
 
-#### FDB Group By Clause
+#### DB Group By Clause
 ```javascript
-declare type FDBGroupBy = FDBColumn | FDBFunction | string
+declare type DBGroupBy = DBColumn | DBFunction | string
 ```
 
 ---
 
-#### FDB Logic
+#### DB Logic
 ```javascript
-declare type FDBLogic = FDBFunction | FDBWhere | FDBSubQuery | boolean
+declare type DBLogic = DBFunction | DBWhere | DBSubQuery | boolean
 ```
 
 Go to the next [chapter](attributes.md) to know more about Attributes.
