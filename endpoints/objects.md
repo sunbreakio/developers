@@ -144,8 +144,9 @@ See [Where](../querying/where.md) for more details.
 
 **Headers**
 
-    Content-Type	application/json
-    Authorization   Bearer <short-access-token>
+    Content-Type			application/json
+    Authorization   		Bearer <short-access-token>
+	X-HTTP-Method-Override	GET
     
 **Body**
 ```json
@@ -182,11 +183,12 @@ See [Where](../querying/where.md) for more details.
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer <short-access-token>");
 myHeaders.append("Content-Type", "application/json");
+myHeaders.append("X-HTTP-Method-Overrid", "GET");
 
 var raw = JSON.stringify({"filter":{"where":{"operator":"=","args":["id",5]}},"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}});
 
 var requestOptions = {
-  method: 'GET',
+  method: 'POST',
   headers: myHeaders,
   body: raw,
   redirect: 'follow'
@@ -202,14 +204,24 @@ fetch("https://mycooldomain.com/api/objects", requestOptions)
 ```javascript
 var request = require('request');
 var options = {
-  'method': 'GET',
-  'url': 'https://mycooldomain.com/api/objects',
-  'headers': {
-    'Authorization': 'Bearer <short-access-token>',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"filter":{"where":{"operator":"=","args":["id",5]}},"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}})
-
+	'method': 'POST',
+	'url': 'https://mycooldomain.com/api/objects',
+	'headers': {
+		'Authorization': 'Bearer <short-access-token>',
+		'Content-Type': 'application/json',
+		'X-HTTP-Method-Overrid': 'GET'
+	},
+	body: JSON.stringify({
+		"filter": {
+			"where": {
+				"operator": "=",
+				"args": ["id", 5]
+			}
+		},
+		"context": {
+			"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"
+		}
+	})
 };
 request(options, function (error, response) { 
   if (error) throw new Error(error);
@@ -223,13 +235,14 @@ request(options, function (error, response) {
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
 $request->setUrl('https://mycooldomain.com/api/objects');
-$request->setMethod(HTTP_Request2::METHOD_GET);
+$request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
 ));
 $request->setHeader(array(
-  'Authorization' => 'Bearer <short-access-token>',
-  'Content-Type' => 'application/json'
+  'Authorization'         => 'Bearer <short-access-token>',
+  'Content-Type'          => 'application/json',
+  'X-HTTP-Method-Overrid' => 'GET'
 ));
 $request->setBody('{\n    "filter": {\n        "where": {\n          "operator": "=",\n          "args": ["id", 5]\n        }\n    },\n    "context": {\n        "tableName": "245ce633-796f-4dfa-ae6f-4b2762adbf44"\n    }\n}');
 try {
@@ -385,8 +398,9 @@ See [Where](../querying/where.md) for more details.
 
 **Headers**
 
-    Content-Type	application/json
-    Authorization   Bearer <short-access-token>
+    Content-Type			application/json
+    Authorization   		Bearer <short-access-token>
+	X-HTTP-Method-Override	DELETE
     
 **Body**
 ```json
@@ -423,34 +437,35 @@ See [Where](../querying/where.md) for more details.
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer <short-access-token>");
 myHeaders.append("Content-Type", "application/json");
+myHeaders.append("X-HTTP-Method-Overrid", "DELETE");
 
 var raw = JSON.stringify({"filter":{"where":{"operator":"=","args":["id",5]}},"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}});
 
 var requestOptions = {
-  method: 'DELETE',
+  method: 'POST',
   headers: myHeaders,
   body: raw,
   redirect: 'follow'
 };
 
 fetch("https://mycooldomain.com/api/objects", requestOptions)
-  .then(response => response.text())
+  .then(response => response.json())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+  .catch(error => console.error(error));
 ```
 
 {% sample lang="nodejs" -%}
 ```javascript
 var request = require('request');
 var options = {
-  'method': 'DELETE',
+  'method': 'POST',
   'url': 'https://mycooldomain.com/api/objects',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+	'X-HTTP-Method-Overrid': 'DELETE'
   },
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["id",5]}},"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}})
-
 };
 request(options, function (error, response) { 
   if (error) throw new Error(error);
@@ -464,13 +479,14 @@ request(options, function (error, response) {
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
 $request->setUrl('https://mycooldomain.com/api/objects');
-$request->setMethod(HTTP_Request2::METHOD_DELETE);
+$request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
 ));
 $request->setHeader(array(
-  'Authorization' => 'Bearer <short-access-token>',
-  'Content-Type' => 'application/json'
+  'Authorization'         => 'Bearer <short-access-token>',
+  'Content-Type'          => 'application/json',
+  'X-HTTP-Method-Overrid' => 'DELETE'
 ));
 $request->setBody('{\n    "filter": {\n        "where": {\n            "operator": "=",\n            "args": [\n                "id",\n                5\n            ]\n        }\n    },\n    "context": {\n        "tableName": "245ce633-796f-4dfa-ae6f-4b2762adbf44"\n    }\n}');
 try {

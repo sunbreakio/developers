@@ -4,7 +4,7 @@
 Attributes allow to set a list of returning columns in resulting response.
 By default it's full set of columns which are defined in metadata of table.
 
-See type [FDB Attribute](types.md#fdb-attribute) for more details. 
+See type [DB Attribute](types.md#db-attribute) for more details. 
 
 {% sample lang="nodejs" -%}
 ```javascript

@@ -9,14 +9,14 @@ Main format of `where` clause looks like bellow:
 const query = {
   filter: {
     where: {
-      operator: FDBOperators,
-      args: Array<FDBWhere | FDBWhereArgs>
+      operator: DBOperators,
+      args: Array<DBWhere | DBWhereArgs>
     } 
   } 
 }
 ```
-See types descriptions of [FDB Operator](types.md#fdb-operator), [FDB Where](types.md#fdb-where-clause) and 
-[FDB Where Arguments](types.md#fdb-where-arguments) for more details. 
+See types descriptions of [DB Operator](types.md#db-operator), [DB Where](types.md#db-where-clause) and 
+[DB Where Arguments](types.md#db-where-arguments) for more details. 
 
 `operator: string`: one of listed values:
 
@@ -65,7 +65,7 @@ See types descriptions of [FDB Operator](types.md#fdb-operator), [FDB Where](typ
 | `any` | ANY ARRAY[2, 3]::INTEGER |
 | `all` | \> ALL (SELECT 1) |
 
-`args: Array<FDBWhere | FDBWhereArgs>`: 
+`args: Array<DBWhere | DBWhereArgs>`: 
 ```javascript
 {
   args: ['id', 3]
