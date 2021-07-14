@@ -32,6 +32,8 @@
         * [Put](endpoints/visitors.md#put)
 	* [Audiences](endpoints/audiences.md)
 	    * [Get](endpoints/audiences.md#get)
+	* [Blocks](endpoints/blocks.md)
+	    * [Get](endpoints/blocks.md#get)
 * [API Test Client](api-tool/index.md)
 * [Querying](querying/index.md)
     * [Types](querying/types.md)

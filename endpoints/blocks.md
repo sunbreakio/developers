@@ -1,13 +1,11 @@
-# Audiences
+# Blocks
 
-Allows to get visitor audience ID.
-
-The method has a visitor ID (UUID v4) as part of the URI.
+Allows to get block content.
 
 {% method -%}
 ## Get
 
-This method allows to find visitor audience ID.
+This method allows to get block content (HTML) by block ID and audience ID.
 
 **Method**
 
@@ -15,15 +13,11 @@ This method allows to find visitor audience ID.
     
 **URI**
 
-    /audiences/v1/:visitorId
+    /blocks/v1/:blockId
 
-**Parameters (optional)**
+**Parameters**
 
-	gmt_offset=<timezone offset in minutes>,
-	referrer=<URL>,
-	new_visitor=<boolean>,
-	<characteristic-alias>=<value>
-
+	audience=<UUIDv4>
 
 **Headers**
 
@@ -32,14 +26,7 @@ This method allows to find visitor audience ID.
     
 **Result**
 ```json
-/* for a single audience */
-"4da8815b-43c2-442f-a482-2eb31ae3c1c5"
-
-/* for multiple audiences */
-["d6ad68d4-575c-4718-86be-60547d1184d5", "0a6aaefb-423e-4a30-a51a-119054060fd3"]
-
-/* if no result */
-null
+/* html-content */
 ```
 
 {% sample lang="js" -%}
@@ -54,7 +41,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch('https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45', requestOptions)
+fetch('https://mycooldomain.com/blocks/v1/23be832b-09b4-425b-b545-265cc5d9e4b2?audience=4da8815b-43c2-442f-a482-2eb31ae3c1c5', requestOptions)
   .then(response => response.json())
   .then(result => console.log(result))
   .catch(error => console.error(error));
@@ -65,7 +52,7 @@ fetch('https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf4
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45',
+  'url': 'https://mycooldomain.com/blocks/v1/23be832b-09b4-425b-b545-265cc5d9e4b2?audience=4da8815b-43c2-442f-a482-2eb31ae3c1c5',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -82,7 +69,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45');
+$request->setUrl('https://mycooldomain.com/blocks/v1/23be832b-09b4-425b-b545-265cc5d9e4b2?audience=4da8815b-43c2-442f-a482-2eb31ae3c1c5');
 $request->setMethod(HTTP_Request2::METHOD_GET);
 $request->setConfig(array(
   'follow_redirects' => TRUE
