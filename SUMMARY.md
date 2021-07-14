@@ -30,6 +30,8 @@
 	    * [Get](endpoints/visitors.md#get)
         * [Post](endpoints/visitors.md#post)
         * [Put](endpoints/visitors.md#put)
+	* [Audiences](endpoints/audiences.md)
+	    * [Get](endpoints/audiences.md#get)
 * [API Test Client](api-tool/index.md)
 * [Querying](querying/index.md)
     * [Types](querying/types.md)
