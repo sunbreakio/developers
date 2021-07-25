@@ -10,7 +10,7 @@
     "glossary": "GLOSSARY.md"
   },
   "variables": {
-    "apiUrl": "https://api.sunbreak.dev/"
+    "apiUrl": "https://dev.api.sunbreak.io/"
   },
   "plugins": [
     "theme-api",

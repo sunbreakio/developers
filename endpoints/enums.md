@@ -62,7 +62,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.sunbreak.dev/api/enums", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -73,7 +73,7 @@ fetch("https://api.sunbreak.dev/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'https://api.sunbreak.dev/api/enums',
+  'url': 'https://dev.api.sunbreak.io/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://api.sunbreak.dev/api/enums');
+$request->setUrl('https://dev.api.sunbreak.io/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -186,7 +186,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.sunbreak.dev/api/enums", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -197,7 +197,7 @@ fetch("https://api.sunbreak.dev/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://api.sunbreak.dev/api/enums',
+  'url': 'https://dev.api.sunbreak.io/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -216,7 +216,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://api.sunbreak.dev/api/enums');
+$request->setUrl('https://dev.api.sunbreak.io/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_GET);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -303,7 +303,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.sunbreak.dev/api/enums", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -314,7 +314,7 @@ fetch("https://api.sunbreak.dev/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'PUT',
-  'url': 'https://api.sunbreak.dev/api/enums',
+  'url': 'https://dev.api.sunbreak.io/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -333,7 +333,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://api.sunbreak.dev/api/enums');
+$request->setUrl('https://dev.api.sunbreak.io/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_PUT);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -424,7 +424,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.sunbreak.dev/api/enums", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/enums", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -435,7 +435,7 @@ fetch("https://api.sunbreak.dev/api/enums", requestOptions)
 var request = require('request');
 var options = {
   'method': 'DELETE',
-  'url': 'https://api.sunbreak.dev/api/enums',
+  'url': 'https://dev.api.sunbreak.io/api/enums',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -454,7 +454,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://api.sunbreak.dev/api/enums');
+$request->setUrl('https://dev.api.sunbreak.io/api/enums');
 $request->setMethod(HTTP_Request2::METHOD_DELETE);
 $request->setConfig(array(
   'follow_redirects' => TRUE

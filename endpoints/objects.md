@@ -67,7 +67,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://mycooldomain.com/api/objects", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/objects", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -78,7 +78,7 @@ fetch("https://mycooldomain.com/api/objects", requestOptions)
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'https://mycooldomain.com/api/objects',
+  'url': 'https://dev.api.sunbreak.io/api/objects',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/objects');
+$request->setUrl('https://dev.api.sunbreak.io/api/objects');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -194,7 +194,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://mycooldomain.com/api/objects", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/objects", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -205,7 +205,7 @@ fetch("https://mycooldomain.com/api/objects", requestOptions)
 var request = require('request');
 var options = {
 	'method': 'POST',
-	'url': 'https://mycooldomain.com/api/objects',
+	'url': 'https://dev.api.sunbreak.io/api/objects',
 	'headers': {
 		'Authorization': 'Bearer <short-access-token>',
 		'Content-Type': 'application/json',
@@ -234,7 +234,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/objects');
+$request->setUrl('https://dev.api.sunbreak.io/api/objects');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -323,7 +323,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://mycooldomain.com/api/objects", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/objects", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -334,7 +334,7 @@ fetch("https://mycooldomain.com/api/objects", requestOptions)
 var request = require('request');
 var options = {
   'method': 'PUT',
-  'url': 'https://mycooldomain.com/api/objects',
+  'url': 'https://dev.api.sunbreak.io/api/objects',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -353,7 +353,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/objects');
+$request->setUrl('https://dev.api.sunbreak.io/api/objects');
 $request->setMethod(HTTP_Request2::METHOD_PUT);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -448,7 +448,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://mycooldomain.com/api/objects", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/objects", requestOptions)
   .then(response => response.json())
   .then(result => console.log(result))
   .catch(error => console.error(error));
@@ -459,7 +459,7 @@ fetch("https://mycooldomain.com/api/objects", requestOptions)
 var request = require('request');
 var options = {
   'method': 'POST',
-  'url': 'https://mycooldomain.com/api/objects',
+  'url': 'https://dev.api.sunbreak.io/api/objects',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json',
@@ -478,7 +478,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/objects');
+$request->setUrl('https://dev.api.sunbreak.io/api/objects');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE

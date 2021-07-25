@@ -91,7 +91,7 @@ const myHeaders = new Headers()
 myHeaders.append("Content-Type", "application/json")
 myHeaders.append("Authorization", "Bearer <long-access-token>")
 
-const apiURL = "https://mycooldomain.com/"
+const apiURL = "https://dev.api.sunbreak.io/"
 const payload = {
   data: [{
       permissions: {
@@ -125,7 +125,7 @@ fetch(apiURL + "api/auth/subscribe", requestOptions)
 ```javascript
 const request = require('request')
 
-const apiURL = 'https://mycooldomain.com/'
+const apiURL = 'https://dev.api.sunbreak.io/'
 const payload = {
   data: [{
       permissions: {
@@ -163,7 +163,7 @@ request(options, function (error, response) {
 require_once 'HTTP/Request2.php';
 
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/auth/subscribe');
+$request->setUrl('https://dev.api.sunbreak.io/api/auth/subscribe');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE

@@ -54,7 +54,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch('https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45', requestOptions)
+fetch('https://dev.api.sunbreak.io/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45', requestOptions)
   .then(response => response.json())
   .then(result => console.log(result))
   .catch(error => console.error(error));
@@ -65,7 +65,7 @@ fetch('https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf4
 var request = require('request');
 var options = {
   'method': 'GET',
-  'url': 'https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45',
+  'url': 'https://dev.api.sunbreak.io/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45',
   'headers': {
     'Authorization': 'Bearer <short-access-token>',
     'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45');
+$request->setUrl('https://dev.api.sunbreak.io/audiences/v1/245ce633-796f-4dfa-ae6f-4b2762adbf45');
 $request->setMethod(HTTP_Request2::METHOD_GET);
 $request->setConfig(array(
   'follow_redirects' => TRUE

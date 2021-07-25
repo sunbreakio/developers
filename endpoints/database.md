@@ -66,7 +66,7 @@ const requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://mycooldomain.com/api/database/connection", requestOptions)
+fetch("https://dev.api.sunbreak.io/api/database/connection", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -77,7 +77,7 @@ fetch("https://mycooldomain.com/api/database/connection", requestOptions)
 const request = require('request');
 const options = {
   'method': 'POST',
-  'url': 'https://mycooldomain.com/api/database/connection',
+  'url': 'https://dev.api.sunbreak.io/api/database/connection',
   'headers': {
     'Content-Type': ['application/json']
   },
@@ -95,7 +95,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/database/connection');
+$request->setUrl('https://dev.api.sunbreak.io/api/database/connection');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE
@@ -151,7 +151,7 @@ const myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append("Authorization", "Bearer <long-access-token>");
 
-const apiURL = 'https://mycooldomain.com/'
+const apiURL = 'https://dev.api.sunbreak.io/'
 const requestOptions = {
   method: 'DELETE',
   headers: myHeaders,
@@ -167,7 +167,7 @@ fetch(apiURL + "api/database/connection", requestOptions)
 {% sample lang="nodejs" -%}
 ```javascript
 const request = require('request');
-const apiURL = 'https://mycooldomain.com/'
+const apiURL = 'https://dev.api.sunbreak.io/'
 const options = {
   'method': 'POST',
   'url': apiURL + 'api/database/connection',
@@ -187,7 +187,7 @@ request(options, function (error, response) {
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://mycooldomain.com/api/database/connection');
+$request->setUrl('https://dev.api.sunbreak.io/api/database/connection');
 $request->setMethod(HTTP_Request2::METHOD_DELETE);
 $request->setConfig(array(
   'follow_redirects' => TRUE
