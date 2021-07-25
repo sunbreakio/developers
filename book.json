@@ -2,6 +2,9 @@
   "title": "Sunbreak Personalization API",
   "description": "Sunbreak Personalization API",
   "gitbook": "3.x.x",
+  "styles": {
+    "website": "styles/website.css"
+  },
   "structure": {
     "readme": "README.md",
     "glossary": "GLOSSARY.md"
