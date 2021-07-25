@@ -1,12 +1,7 @@
-.book {
-	background: red;
-	font-size: 16pt;
-}
-
 /* Reduce size of logo to allow long versions like 3.0.0-pre.1 */
-.gb-page-header .container .logo h1 {
-	/* font-size: 24px ; */
-}
+/* .gb-page-header .container .logo h1 {
+	font-size: 24px ;
+} */
 
 .book-body {
 	background: #2a2e31;
