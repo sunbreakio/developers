@@ -10,7 +10,8 @@
 }
 
 .book-body section a,
-.book-summary ul.summary li.active>a {
+.book-summary ul.summary li.active>a,
+.book.color-theme-3 .book-body section a {
 	color: #ffeb42;
 }
 
