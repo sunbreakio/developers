@@ -17,6 +17,10 @@
 	color: #ff8b39;
 }
 
+.book-body section a {
+	color: #ffeb42;
+}
+
 .book .book-summary .book-logo {
 	text-align: center;
 	padding: 20px;
