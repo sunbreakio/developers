@@ -19,7 +19,8 @@
     "include-codeblock",
     "ace",
     "term",
-    "copy-code-button"
+    "copy-code-button",
+    "insert-logo"
   ],
   "pluginsConfig": {
     "theme-api": {
@@ -30,6 +31,10 @@
       "template": "ace",
       "unindent": true,
       "theme": "monokai"
+    },
+    "insert-logo": {
+      "url": "https://sunbreak.io/wp-content/uploads/2020/04/favicon-512x512-3.png",
+      "style": "background: none;"
     }
   }
 }
