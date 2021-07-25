@@ -24,3 +24,10 @@
 .markdown-section pre {
 	color: #2a2e31;
 }
+
+.book.color-theme-3 .book-header .btn.lang-switcher.active {
+	background-color: #ffeb42;
+}
+.book.color-theme-3 .book-header .btn {
+	color: #2a2e31;
+}
