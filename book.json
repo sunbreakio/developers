@@ -33,7 +33,7 @@
       "theme": "monokai"
     },
     "insert-logo": {
-      "url": "svg/sunbreak-logo-dark.svg",
+      "url": "../svg/sunbreak-logo-dark.svg",
       "style": "background: none;"
     }
   }
