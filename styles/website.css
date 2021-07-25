@@ -1,36 +1,21 @@
-/* Reduce size of logo to allow long versions like 3.0.0-pre.1 */
-/* .gb-page-header .container .logo h1 {
-	font-size: 24px ;
-} */
-
-.book-body,
-.book-summary {
+.book .book-body,
+.book .book-summary,
+.book .book-summary .book-logo {
 	background: #2a2e31;
 	color: white;
 }
 
-.book-summary ul.summary li a, .book-summary ul.summary li span {
-	color: white;
+.book .book-summary {
+	border-right: 1px solid black;
 }
 
+.book-body section a,
 .book-summary ul.summary li.active>a {
 	color: #ffeb42;
 }
 
-.book-body section a {
-	color: #ffeb42;
-}
-
-.book .book-summary .book-logo {
-	text-align: center;
-	padding: 20px;
-	background: #2a2e31;
-}
-.book-summary {
-	border-right: 1px solid black;
-}
-
-.markdown-section {
+.markdown-section,
+.book-summary ul.summary li a, .book-summary ul.summary li span {
 	color: white;
 }
 
