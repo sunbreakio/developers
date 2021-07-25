@@ -34,7 +34,6 @@
     },
     "insert-logo": {
       "url": "https://developers.sunbreak.io/svg/sunbreak-logo-light.svg",
-      "style": "background: none;"
     }
   }
 }
