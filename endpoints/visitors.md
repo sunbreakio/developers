@@ -1,4 +1,4 @@
-# Visitors
+# Spec: Visitors
 
 Allows to add, get, change visitor profile.
 
@@ -14,7 +14,7 @@ This method allows to find existing visitor profile by its `visitorId`, otherwis
 **Method**
 
     GET
-    
+
 **URI**
 
     /visitors/v1/:visitorId
@@ -23,7 +23,7 @@ This method allows to find existing visitor profile by its `visitorId`, otherwis
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Result**
 ```json
 {
@@ -65,7 +65,7 @@ var options = {
     'Content-Type': 'application/json'
   }
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -111,7 +111,7 @@ This method allows to create a profile for the current visitor.
 **Method**
 
     POST
-    
+
 **URI**
 
     /visitors/v1/:visitorId
@@ -120,7 +120,7 @@ This method allows to create a profile for the current visitor.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Result**
 ```json
 {
@@ -162,7 +162,7 @@ var options = {
     'Content-Type': 'application/json'
   }
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -208,7 +208,7 @@ This method allows to update the profile for the current visitor.
 **Method**
 
     PUT
-    
+
 **URI**
 
     /visitors/v1/:visitorId
@@ -218,7 +218,7 @@ This method allows to update the profile for the current visitor.
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
 
-    
+
 **Body**
 ```json
 {
@@ -273,7 +273,7 @@ var options = {
 		visited_pages: 'page-name'
   })
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

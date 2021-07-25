@@ -1,4 +1,4 @@
-# Enum Values
+# Spec: Enum Values
 
 This API is part of [Enums](enums.md) API.
 
@@ -12,7 +12,7 @@ This method allows to create one or more enum values for specific 'enumId'
 **Method**
 
     POST
-    
+
 **URI**
 
     /api/enum_values
@@ -21,7 +21,7 @@ This method allows to create one or more enum values for specific 'enumId'
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -158,7 +158,7 @@ var options = {
   body: JSON.stringify({"data":[{"label":"Red","options":{"order":1}},{"label":"Green","options":{"order":2}},{"label":"Yellow","options":{"order":3}},{"label":"Black","options":{"order":4}},{"label":"White","options":{"order":5}}],"context":{"enumId":48}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -207,7 +207,7 @@ See [Where](../querying/where.md) for more details.
 **Method**
 
     GET
-    
+
 **URI**
 
     /api/enum_values
@@ -216,7 +216,7 @@ See [Where](../querying/where.md) for more details.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -286,7 +286,7 @@ var options = {
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["label","Red"]}},"context":{"enumId":42}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -333,7 +333,7 @@ This method allows update existing enum value
 **Method**
 
     PUT
-    
+
 **URI**
 
     /api/enum_values
@@ -342,7 +342,7 @@ This method allows update existing enum value
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -409,7 +409,7 @@ var options = {
   body: JSON.stringify({"data":[{"id":106,"label":"Pink"}],"context":{"enumId":42}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -458,7 +458,7 @@ See [Where](../querying/where.md) for more details.
 **Method**
 
     DELETE
-    
+
 **URI**
 
     /api/enum_values
@@ -467,7 +467,7 @@ See [Where](../querying/where.md) for more details.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -537,7 +537,7 @@ var options = {
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["id",105]}},"context":{"enumId":48}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

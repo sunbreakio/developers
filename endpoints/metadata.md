@@ -1,4 +1,4 @@
-# Metadata
+# Spec: Metadata
 
 This API works with database tables.
 
@@ -10,7 +10,7 @@ You can create, retrieve, update and delete your tables.
 **Method**
 
     POST
-    
+
 **URI**
 
     /api/metadata
@@ -19,7 +19,7 @@ You can create, retrieve, update and delete your tables.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -118,7 +118,7 @@ var options = {
   body: JSON.stringify({"data":[{"name":"Table 1"}],"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -164,7 +164,7 @@ catch(HTTP_Request2_Exception $e) {
 **Method**
 
     GET
-    
+
 **URI**
 
     /api/metadata
@@ -173,7 +173,7 @@ catch(HTTP_Request2_Exception $e) {
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -286,7 +286,7 @@ var options = {
   body: JSON.stringify({"filter":{"attributes":[{"column":"id","alias":"metadataId"},"name",{"column":"tableName","alias":"metaTableName"},"fields","createdAt"],"where":{"operator":"=","args":["id",131]}},"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -337,7 +337,7 @@ change their properties: make column Indexed, Mandatory, Encrypted.
 **Method**
 
     PUT
-    
+
 **URI**
 
     /api/metadata
@@ -346,7 +346,7 @@ change their properties: make column Indexed, Mandatory, Encrypted.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -446,7 +446,7 @@ var options = {
   body: JSON.stringify({"data":[{"id":131,"name":"Table 2"}],"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -488,12 +488,12 @@ catch(HTTP_Request2_Exception $e) {
 {% method -%}
 ## Delete
 
-This method allows to delete existing metadata with related table in DB 
+This method allows to delete existing metadata with related table in DB
 
 **Method**
 
     DELETE
-    
+
 **URI**
 
     /api/metadata
@@ -502,7 +502,7 @@ This method allows to delete existing metadata with related table in DB
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -602,7 +602,7 @@ var options = {
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["id",131]}},"context":{}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

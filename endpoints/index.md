@@ -1,6 +1,6 @@
 <img src="../svg/sunbreak-logo-dark.svg" alt="Sunbreak logo" width="256"/>
 
-# Sunbreak Personalization API
+# Personalization API
 
 This documentation is for developers who want to use the Sunbreak APIs. There are 2 separate APIs:
 

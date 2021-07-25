@@ -1,4 +1,4 @@
-# Audiences
+# Spec: Audiences
 
 Allows to get visitor audience ID.
 
@@ -12,7 +12,7 @@ This method allows to find visitor audience ID.
 **Method**
 
     GET
-    
+
 **URI**
 
     /audiences/v1/:visitorId
@@ -29,7 +29,7 @@ This method allows to find visitor audience ID.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Result**
 ```json
 /* for a single audience */
@@ -71,7 +71,7 @@ var options = {
     'Content-Type': 'application/json'
   }
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

@@ -1,21 +1,21 @@
-# Database
+# Spec: Database
 
 This API allows connect/disconnect your databases.
 
 {% method -%}
 ## Connect
 
-Connect to existing database or create new one. 
+Connect to existing database or create new one.
 
-This method returns [Long Access Token](../GLOSSARY.md#long-access-token) which is required to get 
+This method returns [Long Access Token](../GLOSSARY.md#long-access-token) which is required to get
 [Short Access Token](../GLOSSARY.md#short-access-token) - main token for all requests.
 
-Set parameter `isNewUser: true` to register new user. 
+Set parameter `isNewUser: true` to register new user.
 
 **Method**
 
     POST
-    
+
 **URI**
 
     /api/database/connection
@@ -24,7 +24,7 @@ Set parameter `isNewUser: true` to register new user.
 
     Content-Type	application/json
 
-    
+
 **Body**
 ```json
 {
@@ -84,7 +84,7 @@ const options = {
   body: JSON.stringify({"data":[{"email":"some-user@example.com","password":"some_secret_password","name":"Some User"}],"context":{"domain":"mycooldomain.com","isNewUser":true,"location":"custom","locale":"en"}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -130,7 +130,7 @@ Disconnect database
 **Method**
 
     DELETE
-    
+
 **URI**
 
     /api/database/connection
@@ -176,7 +176,7 @@ const options = {
     'Authorization': 'Bearer <long-access-token>'
   }
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

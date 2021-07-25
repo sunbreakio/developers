@@ -1,4 +1,4 @@
-# Blocks
+# Spec: Blocks
 
 Allows to get block content.
 
@@ -10,7 +10,7 @@ This method allows to get block content (HTML) by block ID and audience ID.
 **Method**
 
     GET
-    
+
 **URI**
 
     /blocks/v1/:blockId
@@ -23,7 +23,7 @@ This method allows to get block content (HTML) by block ID and audience ID.
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Result**
 ```json
 /* html-content */
@@ -58,7 +58,7 @@ var options = {
     'Content-Type': 'application/json'
   }
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

@@ -1,4 +1,4 @@
-# Leads
+# Spec: Leads
 
 Allows to add, get, change Salesforce Leads info to visitor profile.
 
@@ -14,7 +14,7 @@ This method allows to get Salesforce info from existing visitor profile by its `
 **Method**
 
     GET
-    
+
 **URI**
 
     /leads/v1/:visitorId
@@ -23,7 +23,7 @@ This method allows to get Salesforce info from existing visitor profile by its `
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Result**
 ```json
 {
@@ -60,7 +60,7 @@ var options = {
     'Content-Type': 'application/json'
   }
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -106,7 +106,7 @@ This method allows to update the profile for the current visitor.
 **Method**
 
     PUT
-    
+
 **URI**
 
     /leads/v1/:visitorId
@@ -116,7 +116,7 @@ This method allows to update the profile for the current visitor.
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
 
-    
+
 **Body**
 ```json
 {
@@ -176,7 +176,7 @@ var options = {
 		email: 'my@mail.com'
   })
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

@@ -1,11 +1,11 @@
-# Objects
+# Spec: Objects
 
 Main API which works with table rows.
 
 Allows to add, get, change and delete table rows.
 
-Each method has [context](../GLOSSARY.md#context): `tableName` - 
-it should be table name of existing Metadata. 
+Each method has [context](../GLOSSARY.md#context): `tableName` -
+it should be table name of existing Metadata.
 We use UUID v4 as tableName.
 
 {% method -%}
@@ -16,7 +16,7 @@ This method allows to create one or more objects for specific `tableName` as [co
 **Method**
 
     POST
-    
+
 **URI**
 
     /api/objects
@@ -25,7 +25,7 @@ This method allows to create one or more objects for specific `tableName` as [co
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -86,7 +86,7 @@ var options = {
   body: JSON.stringify({"data":[{"customField":"Test value"}],"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -137,7 +137,7 @@ See [Where](../querying/where.md) for more details.
 **Method**
 
     GET
-    
+
 **URI**
 
     /api/objects
@@ -147,7 +147,7 @@ See [Where](../querying/where.md) for more details.
     Content-Type			application/json
     Authorization   		Bearer <short-access-token>
 	X-HTTP-Method-Override	GET
-    
+
 **Body**
 ```json
 {
@@ -223,7 +223,7 @@ var options = {
 		}
 	})
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -271,7 +271,7 @@ This method allows update existing object field by its `id` and `tableName` as [
 **Method**
 
     PUT
-    
+
 **URI**
 
     /api/objects
@@ -280,7 +280,7 @@ This method allows update existing object field by its `id` and `tableName` as [
 
     Content-Type	application/json
     Authorization   Bearer <short-access-token>
-    
+
 **Body**
 ```json
 {
@@ -342,7 +342,7 @@ var options = {
   body: JSON.stringify({"data":[{"id":5,"customField":"Test value 1"}],"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}})
 
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
@@ -391,7 +391,7 @@ See [Where](../querying/where.md) for more details.
 **Method**
 
     DELETE
-    
+
 **URI**
 
     /api/objects
@@ -401,7 +401,7 @@ See [Where](../querying/where.md) for more details.
     Content-Type			application/json
     Authorization   		Bearer <short-access-token>
 	X-HTTP-Method-Override	DELETE
-    
+
 **Body**
 ```json
 {
@@ -467,7 +467,7 @@ var options = {
   },
   body: JSON.stringify({"filter":{"where":{"operator":"=","args":["id",5]}},"context":{"tableName":"245ce633-796f-4dfa-ae6f-4b2762adbf44"}})
 };
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });

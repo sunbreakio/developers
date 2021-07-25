@@ -1,30 +1,9 @@
 <img src="svg/sunbreak-logo-dark.svg" alt="Sunbreak logo" width="256"/>
 
-# Sunbreak Personalization for Developers
+# Developer documentation
 
-This documentation is for developers who want to use the Sunbreak APIs. There are 2 separate APIs:
+We really hope that this documentation will encourage WordPress developers to create awesome additions to their sites. If there’s anything you want us to add, just submit a ticket from https://support.sunbreak.io/submit-a-ticket/.
 
-1.    REST - standard method of creating data tables, pick lists, etc.
-
-2.    Sockets – better for real time updates, perfect for Gutenberg blocks.
-
-<br/>
-
-The documentation here explores all of the methods and end points available, and includes code snippets for:
-
-1.    JavaScript
-
-2.    NODEJS
-
-3.    PHP
-
-We really hope that this documentation will encourage WordPress developers to create awesome additions to their sites. If there’s anything you want us to add, just submit a ticket from https://help.sunbreak.io/submit-a-ticket/.
-
-<br/>
-<br/>
-<br/>
-
-Thanks!
-<br/>
+Cheers!,
 
 The Sunbreak Team

@@ -1,4 +1,4 @@
-# Enums
+# Spec: Enums
 
 This API works with enums (pick lists).
 

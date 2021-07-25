@@ -1,4 +1,4 @@
-# Auth
+# Spec: Auth
 
 You need this method to retrieve [Short Access Token](../GLOSSARY.md#short-access-token)
 
@@ -9,13 +9,13 @@ Get short living accessToken to be able make all helpful requests.
 
 Life time of this token just 1 day, then you need to renew it by this command
 
-This method requires [Long Access Token](../GLOSSARY.md#long-access-token) which you can retrieve using 
+This method requires [Long Access Token](../GLOSSARY.md#long-access-token) which you can retrieve using
 [Database Connect](database.md#connect) method
 
 **Method**
 
     POST
-    
+
 **URI**
 
     /api/auth/subscribe
@@ -24,7 +24,7 @@ This method requires [Long Access Token](../GLOSSARY.md#long-access-token) which
 
     Content-Type	application/json
     Authorization   Bearer <long-access-token>
-    
+
 **Body**
 ```json
 {
@@ -72,7 +72,7 @@ Full view of `permissions` object should be like this:
         "update": true,
         "delete": false
       }
-    } 
+    }
   }
 }
 ```
@@ -151,7 +151,7 @@ const options = {
   body: JSON.stringify(payload)
 }
 
-request(options, function (error, response) { 
+request(options, function (error, response) {
   if (error) throw new Error(error)
   console.log(response.body)
 })
@@ -185,8 +185,8 @@ $payload = array(
                      'read' => true,
                      'update' => true,
                      'delete' => false
-                )   
-            )   
+                )
+            )
         )
     )
 );
