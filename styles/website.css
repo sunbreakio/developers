@@ -13,6 +13,10 @@
 	color: white;
 }
 
+.book-summary ul.summary li.active>a {
+	color: #ff8b39;
+}
+
 .book .book-summary .book-logo {
 	text-align: center;
 	padding: 20px;
