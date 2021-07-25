@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/sunbreakio/developers#readme",
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "lodash": "^4.17.4"
+  },
+  "dependencies": {
+    "npm": "^5.1.0"
   }
 }
