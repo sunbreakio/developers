@@ -9,6 +9,10 @@
 	color: white;
 }
 
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+	color: white;
+}
+
 .book .book-summary .book-logo {
 	text-align: center;
 	padding: 20px;
