@@ -19,6 +19,7 @@
 	color: white;
 }
 
-.markdown-section .code {
+.markdown-section code,
+.markdown-section pre {
 	color: #2a2e31;
 }
