@@ -33,7 +33,7 @@
       "theme": "monokai"
     },
     "insert-logo": {
-      "url": "https://sunbreak.io/wp-content/uploads/2020/04/favicon-512x512-3.png",
+      "url": "svg/sunbreak-logo-dark.svg",
       "style": "background: none;"
     }
   }
