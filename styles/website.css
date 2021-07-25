@@ -9,6 +9,12 @@
 }
 
 .book-body {
-	background: #000;
+	background: #2a2e31;
 	color: #fff;
+}
+
+.book .book-summary .book-logo {
+	text-align: center;
+	padding: 20px;
+	background: #2a2e31;
 }
