@@ -24,7 +24,7 @@
   ],
   "pluginsConfig": {
     "theme-api": {
-      "theme": "light",
+      "theme": "dark",
       "split": true
     },
     "include-codeblock": {
