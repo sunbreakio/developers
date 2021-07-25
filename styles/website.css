@@ -3,7 +3,8 @@
 	font-size: 24px ;
 } */
 
-.book-body {
+.book-body,
+.book-summary {
 	background: #2a2e31;
 	color: white;
 }
