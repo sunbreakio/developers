@@ -5,11 +5,15 @@
 
 .book-body {
 	background: #2a2e31;
-	color: #fff;
+	color: white;
 }
 
 .book .book-summary .book-logo {
 	text-align: center;
 	padding: 20px;
 	background: #2a2e31;
+}
+
+.markdown-section {
+	color: white;
 }
