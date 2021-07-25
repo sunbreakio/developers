@@ -1,4 +1,4 @@
-![Sunbreak](svg/sunbreak-logo-dark.svg)
+<img src="svg/sunbreak-logo-dark.svg" alt="Sunbreak logo" width="256"/>
 
 # Developer documentation
 
