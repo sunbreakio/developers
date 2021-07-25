@@ -17,3 +17,7 @@
 .markdown-section {
 	color: white;
 }
+
+.markdown-section .code {
+	color: #2a2e31;
+}
