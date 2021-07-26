@@ -2,9 +2,7 @@
 
 Before you install contact Sunbreak. We will provide you with a plugin. Ensure you download it to a location ready for installation.
 
-## How to install Sunbreak Personalization
-
-Installing Sunbreak Personalization is easy, follow these steps.
+# Install the Personalization plugin for WordPress.
 
 1. From the WordPress admin dashboard, select Plugins -> Add New.
 
@@ -22,9 +20,11 @@ Installing Sunbreak Personalization is easy, follow these steps.
 5. After the plugin is installed, click on the “Activate Plugin” button.
 
 
-# Creating a Sunbreak account
+# Sign up for a Sunbreak account
 
 Sunbreak Personalization is a SaaS solution. This means that you need to create an account to connect to the Sunbreak servers. This is easy to do.
+
+# Configure the plugin settings
 
 ## Database Location
 
