@@ -1,8 +1,8 @@
-# Install Sunbreak Personalization
+# Getting Started Guide
 
 Before you install contact Sunbreak. We will provide you with a plugin. Ensure you download it to a location ready for installation.
 
-## How to install Sunbreak
+## How to install Sunbreak Personalization
 
 Installing Sunbreak Personalization is easy, follow these steps.
 
