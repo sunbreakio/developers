@@ -1,5 +1,5 @@
 # Summary
-
+* [Overview](SUMMARY.md)
 * [Personalization API](endpoints/index.md)
     * [Spec: Auth](endpoints/auth.md)
         * [Subscribe](endpoints/auth.md#subscribe)

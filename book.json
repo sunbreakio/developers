@@ -1,6 +1,6 @@
 {
-  "title": "Developer Docsumentation",
-  "description": "Sunbreak Personalization",
+  "title": "Sunbreak Personalization docs",
+  "description": "Sunbreak Personalization documentation",
   "gitbook": "3.x.x",
   "styles": {
     "website": "styles/website.css"
