@@ -1,4 +1,4 @@
-# Summary
+# Sunbreak Developer documentation
 * [Overview](SUMMARY.md)
 * [Personalization API](endpoints/index.md)
     * [Spec: Auth](endpoints/auth.md)
